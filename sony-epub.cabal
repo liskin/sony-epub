@@ -1,6 +1,6 @@
 Cabal-Version: >= 1.2
 
-Name:           epub
+Name:           sony-epub
 Version:        0.1
 Synopsis:       A few utilities for ePub tweaking for better reading experience on Sony PRS-350.
 Description:

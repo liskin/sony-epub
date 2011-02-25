@@ -1,0 +1,154 @@
+/* Droid Serif */
+@font-face {
+  font-family: "Droid Serif";
+  font-weight: normal;
+  font-style: normal;
+  src: url(res:///Data/Fonts/DroidSerif-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Droid Serif";
+  font-weight: bold;
+  font-style: normal;
+  src: url(res:///Data/Fonts/DroidSerif-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Droid Serif";
+  font-weight: normal;
+  font-style: italic;
+  src: url(res:///Data/Fonts/DroidSerif-Italic.ttf);
+}
+
+@font-face {
+  font-family: "Droid Serif";
+  font-weight: bold;
+  font-style: italic;
+  src: url(res:///Data/Fonts/DroidSerif-BoldItalic.ttf);
+}
+
+/* Latin Modern Roman */
+@font-face {
+  font-family: "Latin Modern Roman";
+  font-weight: normal;
+  font-style: normal;
+  src: url(res:///Data/Fonts/lmroman10-regular.otf);
+}
+
+@font-face {
+  font-family: "Latin Modern Roman";
+  font-weight: bold;
+  font-style: normal;
+  src: url(res:///Data/Fonts/lmroman10-bold.otf);
+}
+
+@font-face {
+  font-family: "Latin Modern Roman";
+  font-weight: normal;
+  font-style: italic;
+  src: url(res:///Data/Fonts/lmroman10-italic.otf);
+}
+
+@font-face {
+  font-family: "Latin Modern Roman";
+  font-weight: bold;
+  font-style: italic;
+  src: url(res:///Data/Fonts/lmroman10-bolditalic.otf);
+}
+
+/* Latin Modern Sans */
+@font-face {
+  font-family: "Latin Modern Sans";
+  font-weight: normal;
+  font-style: normal;
+  src: url(res:///Data/Fonts/lmsans10-regular.otf);
+}
+
+@font-face {
+  font-family: "Latin Modern Sans";
+  font-weight: bold;
+  font-style: normal;
+  src: url(res:///Data/Fonts/lmsans10-bold.otf);
+}
+
+@font-face {
+  font-family: "Latin Modern Sans";
+  font-weight: normal;
+  font-style: oblique;
+  src: url(res:///Data/Fonts/lmsans10-oblique.otf);
+}
+
+@font-face {
+  font-family: "Latin Modern Sans";
+  font-weight: bold;
+  font-style: oblique;
+  src: url(res:///Data/Fonts/lmsans10-boldoblique.otf);
+}
+
+/* Adobe Caslon Pro */
+@font-face {
+  font-family: "Adobe Caslon Pro";
+  font-weight: normal;
+  font-style: normal;
+  src: url(res:///Data/Fonts/acaslonpro-regular.ttf);
+}
+
+@font-face {
+  font-family: "Adobe Caslon Pro";
+  font-weight: bold;
+  font-style: normal;
+  src: url(res:///Data/Fonts/acaslonpro-bold.ttf);
+}
+
+@font-face {
+  font-family: "Adobe Caslon Pro";
+  font-weight: normal;
+  font-style: italic;
+  src: url(res:///Data/Fonts/acaslonpro-italic.ttf);
+}
+
+@font-face {
+  font-family: "Adobe Caslon Pro";
+  font-weight: bold;
+  font-style: italic;
+  src: url(res:///Data/Fonts/acaslonpro-bolditalic.ttf);
+}
+
+/* Caecilia LT Std */
+@font-face {
+  font-family: "Caecilia LT Std";
+  font-weight: normal;
+  font-style: normal;
+  src: url(res:///Data/Fonts/CaeciliaLTStd-Regular.otf);
+}
+
+@font-face {
+  font-family: "Caecilia LT Std";
+  font-weight: bold;
+  font-style: normal;
+  src: url(res:///Data/Fonts/CaeciliaLTStd-Bold.otf);
+}
+
+@font-face {
+  font-family: "Caecilia LT Std";
+  font-weight: normal;
+  font-style: italic;
+  src: url(res:///Data/Fonts/CaeciliaLTStd-Italic.otf);
+}
+
+@font-face {
+  font-family: "Caecilia LT Std";
+  font-weight: bold;
+  font-style: italic;
+  src: url(res:///Data/Fonts/CaeciliaLTStd-BoldItalic.otf);
+}
+
+/* Overrides */
+body {
+    font-family: "Caecilia LT Std";
+    font-size: 8pt;
+}
+
+.calibre {
+    font-size: 8pt;
+}

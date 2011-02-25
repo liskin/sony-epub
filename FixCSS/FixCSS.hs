@@ -12,7 +12,7 @@ import Codec.Archive.Zip
 main = do
     [filename] <- getArgs
     z <- toArchive `fmap` B.readFile filename
-    let css = [ file | file <- filesInArchive z, ".css" `isSuffixOf` file ]
+    let css = filter (".css" `isSuffixOf`) $ filesInArchive z
         z' = foldl fixCSSFile z css
         tmp = filename ++ ".tmp"
     B.writeFile tmp $ fromArchive z'

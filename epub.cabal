@@ -1,0 +1,16 @@
+Cabal-Version: >= 1.2
+
+Name:           epub
+Version:        0.1
+Synopsis:       A few utilities for ePub tweaking for better reading experience on Sony PRS-350.
+Description:
+Author:         Tomas Janousek
+Maintainer:     Tomas Janousek <tomi@nomi.cz>
+Build-Type:     Simple
+
+Executable epub-fixcss
+    Main-is:            FixCSS/FixCSS.hs
+    Build-Depends:      base >= 4, bytestring, filepath, zip-archive, stringsearch, directory
+    GHC-Options:        -Wall -fno-warn-missing-signatures
+
+-- vim:set et:

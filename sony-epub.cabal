@@ -6,6 +6,7 @@ Synopsis:       A few utilities for ePub tweaking for better reading experience 
 Description:
 Author:         Tomas Janousek
 Maintainer:     Tomas Janousek <tomi@nomi.cz>
+License:        BSD
 Build-Type:     Simple
 
 Executable epub-fixcss

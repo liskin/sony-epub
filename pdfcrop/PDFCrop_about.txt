@@ -1,0 +1,81 @@
+                      PDFCrop version 0.2
+                      ===================
+
+                   copyright 2007 Eric Doviak 
+                    <http://www.doviak.net>
+
+                   copyright 2009 Mark Sherry
+
+What is PDFCrop?
+================
+
+PDFCrop is a Python script that crops the white margins of PDF pages and rescales them to fit a standard size sheet of paper. It makes the printed pages far more attractive to read! 
+
+PDFCrop is particularly useful to academics who print downloaded journal articles and people who receive PDF documents designed for letter size paper, but need to print the pages on A4 paper (or vice versa). 
+
+For example, an academic may get a journal article in which the PDF pages are only 5in. x 7in. If the he/she prints the PDF file with a standard GNU/Linux PDF viewer on letter size paper (8.5in. x 11in), there will be 1.75in white margins on the left and right sides and 2in. white margins on the top and bottom. (In other words, the white margins will consume 63 percent of the square area on the page).
+
+Letter size paper is the most common paper size in the United States, Canada and Mexico, while most other countries use A4 size paper. Consequently, Americans and Italians who exchange documents with each other may experience similar problems because letter size paper is 8.5in. x 11in, while A4 size paper is 8.27in x 11.7in.
+
+PDFCrop solves these problems by removing the white margins and rescaling the pages to fit the user's desired paper size. 
+
+
+How do I install PDFCrop?
+=========================
+
+PDFCrop below depends on the following packages, which (I think) are included in the default installation of Debian (with one exception):
+
+    * ps2pdf
+    * pdf2ps
+    * poster
+    * pdftk (this is the exception)
+
+Assuming that you have already installed these packages, then simply make sure the file "pdfcrop" is executable (i.e.: chmod +x pdfcrop) and copy it to a directory in your $PATH. For example: /home/eric/.bin/pdfcrop  Alternatively, you could (as root) copy it to /usr/local/bin/pdfcrop 
+
+If I were a savvy programmer, I would create a nice deb or rpm for you, but I'm not a savvy programmer.
+
+
+How do I use PDFCrop?
+=====================
+
+To use PDFCrop, simply open a console, cd to the directory where the PDF file that you want to crop and resize is located and type "pdfcrop INFILE.pdf OUTFILE.pdf" There are also options to set the page size and desired white margins (as a percentage).
+
+PDFCrop will then crop and resize the PDF file according to your specifications.
+
+
+What does PDFCrop do?
+=====================
+
+First, PDFCrop calls pdftk to burst the PDF file into single pages, then it calls pdf2ps to convert the PDF pages to PostScript pages. Poster then crops and resizes the PostScript pages. PDFCrop then calls ps2pdf to convert the PS pages back to PDF and finally pdftk reconcatenate the pages.
+
+
+Known issues
+============
+
+The output file that PDFCrop produces is (almost always) larger than the original PDF file. The file size increase occurs when PDFCrop calls poster to resize the PS page. That size increase does not disappear when the PS page is converted back to PDF. I've tried passing distiller parameters to ps2pdf, but none of the parameters that I tried reduce the size of the outputted PDF file. 
+
+
+Why did you create PDFCrop?
+===========================
+
+I created PDFCrop because I hate small text and ugly white margins.
+
+
+Only two releases in 16 months? Why don't you spend more time working on PDFCrop?
+=================================================================================
+
+Because I'm an evil bastard who works for peanuts at a time-consuming day job.
+
+
+This script sucks! I could do a much better job!
+================================================ 
+
+Please do! I would be very happy if someone improved upon my work. That's why PDFCrop is Free Software and is distributed under the terms of the GNU General Public License version 3.
+
+In that spirit, Mark Sherry greatly improved upon my work. He took my original Bash script, completely rewrote it in Python and added a lot of new features. I'm very grateful for his contribution. If it weren't for him, this project wouldn't be making any progress at all.
+
+Maybe one day PDFCrop (or its functionality) will be incorporated into KPDF, Evince or PDFedit. Until then, you have this script.
+
+
+-- Eric Doviak (29 November 2007, updated 17 February 2009)
+

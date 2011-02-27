@@ -88,7 +88,7 @@ exit( 0 );
 echo -n "pdfcrop.sh: getting bounding boxes..."
 {
     echo -n "$PREAMBLE"
-    gs -dSAFER -dNOPAUSE -dBATCH -q -r72 -sDEVICE=bbox -f $f 2>&1 | perl -ne "$PLSCRIPT"
+    gs -dSAFER -dNOPAUSE -dBATCH -q -r72 -sDEVICE=bbox -f "$f" 2>&1 | perl -ne "$PLSCRIPT"
     echo -n "$EPILOG"
 } >"$f".fix.qs
 

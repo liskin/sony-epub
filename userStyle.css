@@ -85,6 +85,35 @@
   src: url(res:///Data/Fonts/DejaVuSerif-BoldItalic.ttf);
 }
 
+/* DejaVu Sans Mono */
+@font-face {
+  font-family: "DejaVu Sans Mono";
+  font-weight: normal;
+  font-style: normal;
+  src: url(res:///Data/Fonts/DejaVuSansMono-Regular.ttf);
+}
+
+@font-face {
+  font-family: "DejaVu Sans Mono";
+  font-weight: bold;
+  font-style: normal;
+  src: url(res:///Data/Fonts/DejaVuSansMono-Bold.ttf);
+}
+
+@font-face {
+  font-family: "DejaVu Sans Mono";
+  font-weight: normal;
+  font-style: italic;
+  src: url(res:///Data/Fonts/DejaVuSansMono-Italic.ttf);
+}
+
+@font-face {
+  font-family: "DejaVu Sans Mono";
+  font-weight: bold;
+  font-style: italic;
+  src: url(res:///Data/Fonts/DejaVuSansMono-BoldItalic.ttf);
+}
+
 /* Overrides */
 body {
     font-family: "Caecilia LT";
@@ -95,7 +124,7 @@ body {
     text-indent: 2em;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
     text-indent: 0;
 }
 
@@ -117,10 +146,32 @@ p.indent {
     text-indent: 2em;
 }
 
-span.dropcaps {
+span.dropcaps, span.dropcap {
     float: inherit;
-    font-size: inherit;
+    font: inherit;
+    font: inherit;
     line-height: inherit;
-    padding-top: inherit;
-    margin-top: inherit;
+    padding: inherit;
+    margin: inherit;
+}
+
+code, tt, pre {
+    font-family: 'DejaVu Sans Mono';
+    font-size: 0.9em;
+}
+
+pre {
+    white-space: pre-wrap; /* css-3 */
+    text-align: left;
+    text-indent: 0;
+    margin: 0;
+}
+
+ul, ol, dl {
+    padding-left: 1em;
+    margin-left: 0;
+}
+
+li {
+    text-indent: 0;
 }
